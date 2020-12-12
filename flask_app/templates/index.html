@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Welcome to the Studna's pharmacy</h1>
+    <p class="lead">A system for employees</p>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+	<div class="col">
+	  <div class="card mb-4 shadow-sm">
+	  <div class="card-header">
+	    <h4 class="my-0 fw-normal">Reservations</h4>
+	  </div>
+	  <div class="card-body">
+	    <button type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="window.location.href='/reservation'">View</button>
+	  </div>
+	</div>
+	</div> 
+	<div class="col">
+	  <div class="card mb-4 shadow-sm">
+	  <div class="card-header">
+	    <h4 class="my-0 fw-normal">Drugs</h4> 
+	  </div>
+	  <div class="card-body">
+	    <button type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="window.location.href='/drugs'">View</button>
+	  </div>
+	</div>
+	</div>
+	<div class="col">
+	  <div class="card mb-4 shadow-sm">
+	  <div class="card-header">
+	    <h4 class="my-0 fw-normal">Employees</h4>
+	  </div>
+	  <div class="card-body">
+	    <button type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="window.location.href='/employees'">View</button>
+	  </div>
+	</div>
+	</div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+	<div class="col">
+	  <div class="card mb-4 shadow-sm">
+	  <div class="card-header">
+	    <h4 class="my-0 fw-normal">Order history</h4>
+	  </div>
+	  <div class="card-body">
+	    <button type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="window.location.href='/history'">View</button>
+	  </div>
+	</div>
+	</div>
+	<div class="col">
+	  <div class="card mb-4 shadow-sm">
+	  <div class="card-header">
+	    <h4 class="my-0 fw-normal">Branch Offices</h4>
+	  </div>
+	  <div class="card-body">
+	    <button type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="window.location.href='/offices'">View</button>
+	  </div>
+	</div>
+	</div>
+	<div class="col">
+	  <div class="card mb-4 shadow-sm">
+	  <div class="card-header">
+	    <h4 class="my-0 fw-normal">API</h4>
+	  </div>
+	  <div class="card-body">
+	    <button type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="window.location.href='/api'">View</button>
+	  </div>
+	</div>
+	</div>
+</div>
+{% endblock %}
